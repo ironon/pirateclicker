@@ -1,0 +1,237 @@
+
+body{
+    background: linear-gradient(rgb(0,0,255,50%),rgba(46, 46, 192, 33%),rgb(194, 178, 128, 17%));
+    justify-content: row;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+img {
+  image-rendering: pixelated;
+}
+body > div {
+    display: flex;
+    border: 1px solid black;
+    width: 33%;
+    height: 100%;
+    margin: 0;
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
+#uniticon {
+  width: 20%;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0, -10%) translateX(0) rotate(0);
+      }
+      10% {
+        transform: translate(0, -10%) translateX(-5px) rotate(-5deg);
+      }
+      20% {
+        transform: translate(0, -10%) translateX(5px) rotate(5deg);
+      }
+      30% {
+        transform: translate(0, -10%) translateX(-5px) rotate(-5deg);
+      }
+      40% {
+        transform: translate(0, -10%) translateX(5px) rotate(5deg);
+      }
+      50% {
+        transform: translate(0, -10%) translateX(-5px) rotate(-5deg);
+      }
+      60% {
+        transform: translate(0, -10%) translateX(5px) rotate(5deg);
+      }
+      70% {
+        transform: translate(0, -10%) translateX(-5px) rotate(-5deg);
+      }
+      80% {
+        transform: translate(0, -10%) translateX(5px) rotate(5deg);
+      }
+      90% {
+        transform: translate(0, -10%) translateX(-5px) rotate(-5deg);
+      }
+      100% {
+        transform: translate(0, -10%) translateX(0) rotate(0);
+      }
+}
+.money-panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between  ;
+}
+
+.money-name{
+  height: 10%;
+}
+
+#treasurechest {
+  
+  width: 100%;
+  object-fit: contain;
+  transform: translate(0, -10%);
+  align-self: right;
+  image-rendering: pixelated;
+}
+#treasurechest:active {
+    animation: shake 0.5s;
+}
+button{
+    height: 50px;
+    background-color: rgb(196, 164, 132);
+    
+    
+}
+.unit{
+  
+  display:flex;
+  justify-content: center;
+
+  width: 100%;
+  justify-content: space-between;
+  image-rendering: pixelated;
+  border-bottom: 1px solid black;
+}
+#unit-buttons {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+}
+.gold-count {
+  text-align: center;
+  text-size-adjust: bold;
+}
+#unit-buttons button {
+  width: 50%;
+  /* text-align: center; */
+}
+
+.upgrade1{
+  margin-right: 10px  ;
+  width: 30%;
+}
+
+.upgrade-upgrades:active {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+/* .plunder{
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin:auto;
+  width: 100%;
+  
+  vertical-align: center;
+}
+.plunder:active{
+  background-color: red;
+  color: black;
+} */
+
+.upgrade-panel{
+  flex-direction: column;
+  display: flex;
+  padding-left: 10px;
+  overflow-y: scroll;
+  scrollbar-color: dark;
+}
+
+.pirate-name{
+  color: black;
+  text-align: center;
+
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+.first-view{
+  display:flex;
+  flex-direction: row;  
+  width: 50%;
+  height: 50%;
+}
+
+#uniticon-view{
+  display:flex;
+  justify-content: center;
+  height: 91.5px;
+  width: 100px;
+  justify-content: space-between;
+  margin-right: 100%;
+
+}
+
+.misc-panel{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  border: 1px solid black
+  
+}
+template {
+  display: none;
+  border: none;
+  position: absolute;
+  top: -100%; 
+  left: 100%  ;
+}
+
+.upgrade-desc{
+  font-size: 13px;
+  width: 150px;
+}
+
+.unit-view{
+  display:flex;
+  flex-direction: row;
+  border: 1px solid black;
+
+}
+
+
+.pricediv{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.gps{
+  text-align: center;
+}
+
+/* .leaderboard{
+  color:red;
+  position: absolute;
+  right:    0;
+  bottom:   0;
+  width: 33%;
+  border: 1px solid black;
+  
+} */
+
+.hover-hand {
+  cursor: pointer;
+}

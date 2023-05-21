@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <link rel="stylesheet" href="./assets/style.css">
+        <meta charset="UTF-8">
+        <script>
+            if (localStorage.getItem("tempUsername") == null) {
+                console.warn("REDIRECTING TO LOGIN SCREEN")
+                window.location.href = "./"
+            }
+        </script>
+        <script src="./assets/units.js"></script>
+        <script src="./assets/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pirate Clicker</title>
+    </head>
+    <body>
+        
+        <!--Left Side-->
+        <div class="upgrade-panel">
+            <!-- TEMPLATE UNIT -->
+            
+            <template class="unit" id="unit-template">
+                <img id="uniticon" src="./assets/stickfigure.png">
+                <div class ="upgrade1">
+                    <p class="upgrade-name">
+                        placeholder
+                    </p>
+                    <i class="upgrade-desc">
+                        placeholder description
+                    </i>
+                </div>
+
+                <div id="unit-buttons">
+                    <div class="buttons">
+                        <button class="upgrade-upgrades"> UPGRADE </button>
+                        <button class="upgrade-buy"> BUY </button>
+                    </div>
+                    <div class="pricediv">
+                        <p class="count">0</p>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </template>
+
+
+        </div>
+
+        <!-- Middle Side-->
+        <div class="money-panel">
+            <h1 class="money-name">
+            <p class="pirate-name"></p> 
+            </h1>
+            <p class="money-goals"></p>
+            <strong class="gold-count"></strong>
+            <p class="gps">
+                GPS (Gold Per Second):
+            </p>
+            <div id="treasurechest">
+                
+                <img src="./assets/imgs/treasurechest.png" id="treasurechest" class="hover-hand">
+            </div>
+            <!-- <div>
+                <button class="plunder"> Plunder ye maties!</button> 
+            </div> -->
+        </div>
+
+        <!--Right Side-->
+        <div class="misc-panel">
+            <template class="unit-view">
+                <!--TEMPLATE-->
+                <div class="first-view" >
+                    <img id="uniticon-view" src="./assets/stickfigure.png">
+            </template>
+
+        
+        <!-- <button class="leaderboard">leaderboards</button> -->
+
+        </div>
+
+    </body>
+
+</html>

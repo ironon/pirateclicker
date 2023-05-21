@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TEST</title>
-    </head>
-    <body>
-        <!--Left Side-->
-        <div class="upgrades">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/signup.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a username</title>
+</head>
+<body>
+    <div class="name-prompt">
+        <label>
+        Please enter yer pirate name, ye landlubber!
+        <input id="first-name" name="first-name" type="text" required />
+        </label>
+        <button class="submit-name">Submit</button>
+    </div>
+</body>
+<script>
+    window.onload = () => {
+        if (localStorage.getItem("tempUsername") != null) {
+            window.location.href = "./game.html"
+        }
+        document.querySelector(".submit-name").addEventListener("click", function(event){
+            let username = document.querySelector("#first-name").value
+            if (username != "") {
+                localStorage.setItem("tempUsername", username)
+                window.location.href = "./game.html"
+            }
             
-        </div>
-
-        <!--Right Side-->
-        <div class="money-panel">
-
-        </div>
-
-        <!--Righter Side-->
-        <div>
-
-        </div>
-    </body>
-
+        })
+    }
+</script>
 </html>

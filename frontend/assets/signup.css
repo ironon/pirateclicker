@@ -1,0 +1,48 @@
+
+body{
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%));
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+.submit-name{
+    justify-self: center;
+    text-align: center;
+    width: 287px;  
+    font-size: large;
+    
+  }
+
+  .angry {
+    background-color: red;
+  }
+  
+  
+  .name-prompt{
+    background-color: rgb(196, 164, 132);
+    border: 2px solid darkblue;
+    color:whitesmoke;
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  input{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    
+  }
